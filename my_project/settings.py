@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-4am%v&u821x0g6rhb^(67(@xxtj#aw$j43foy+82-9*ralt2=+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-f9zld4ediac.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-9qmrjn9xrb4.ws-eu110.gitpod.io']
+
 
 
 # Application definition
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
      'Booking',
      'about',
+    
 ]
 
 MIDDLEWARE = [

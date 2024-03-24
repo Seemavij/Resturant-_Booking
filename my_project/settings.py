@@ -10,10 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
+from django.contrib.messages import constants as messages
 import dj_database_url
-if os.path.isfile('env.py'):
+if os.path.isfile("env.py"):
     import env
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,10 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4am%v&u821x0g6rhb^(67(@xxtj#aw$j43foy+82-9*ralt2=+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-9qmrjn9xrb4.ws-eu110.gitpod.io',
-'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-9qmrjn9xrb4.ws-eu110.gitpod.io','.herokuapp.com']
+
 
 
 
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
      'Booking',
      'about',
+     
     
 ]
 
@@ -87,6 +89,7 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
  #   }
 #}
+
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }

@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-4am%v&u821x0g6rhb^(67(@xxtj#aw$j43foy+82-9*ralt2=+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-9qmrjn9xrb4.ws-eu110.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-e1v8hkbfd53.ws-eu111.gitpod.io','.herokuapp.com']
 
 
 
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'booking',
     'about',
     

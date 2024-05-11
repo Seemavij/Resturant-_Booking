@@ -1,7 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from.models import Post
 
-# Create your views here.
-def index(request):
-    return HttpResponse("Booking!")
+
+class PostList(generic.ListView):
+ model = Post
+Queryset = Post.objects.filter(status=1).order_by('-created_on')
+template_name = 'index.html'
+paginated_by = 6
+    
    

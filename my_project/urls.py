@@ -20,8 +20,11 @@ from booking import views as index_views
 from about import views as about_views
 
 urlpatterns = [
-    path('booking', index_views.index, name='index'),
+    
     path('about/', about_views.about_me, name='about'),
+    path("",include("booking.urls")),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
+    
 ]
+

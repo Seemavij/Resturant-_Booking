@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-^5q3wu=#mjr3c!gy^6b)_=35evl0-#=iw*!*-l!c8u&kf5k8xb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-n4g5ejum3y2.ws-eu111.','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-n4g5ejum3y2.ws-eu111.gitpod.io'
+,'.herokuapp.com']
 
 
 # Application definition
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'reservation',
+    'resturant',
 ]
 
 MIDDLEWARE = [

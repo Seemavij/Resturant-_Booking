@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-^5q3wu=#mjr3c!gy^6b)_=35evl0-#=iw*!*-l!c8u&kf5k8xb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-n4g5ejum3y2.ws-eu111.gitpod.io'
 ,'.herokuapp.com']
@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_summernote',
     'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'reservation',
     'resturant',
     'project',
@@ -65,7 +67,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
 ]
-]
+
 
 ROOT_URLCONF = 'project.urls'
 

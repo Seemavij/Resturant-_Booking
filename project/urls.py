@@ -20,7 +20,7 @@ from reservation import views as index_views
 
 urlpatterns = [
    
-    
+     path("homepage/", include("homepage.urls"), name="homepage-urls"),
     path('admin/', admin.site.urls),
     path("", include("reservation.urls"), name="reservation-urls"),
     path('summernote/', include('django_summernote.urls')),

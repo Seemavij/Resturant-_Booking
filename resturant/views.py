@@ -10,22 +10,22 @@ from .forms import CommentForm
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
-    template_name = "blog/index.html"
+    template_name = "reservation/index.html"
     paginate_by = 6
 
 
 def post_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
+    Display an individual :model:`reservation.Post`.
 
     **Context**
 
     ``post``
-        An instance of :model:`blog.Post`.
+        An instance of :model:`reservation.Post`.
 
     **Template:**
 
-    :template:`blog/post_detail.html`
+    :template:`reservation/post_detail.html`
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
@@ -47,7 +47,7 @@ def post_detail(request, slug):
 
     return render(
         request,
-        "blog/post_detail.html",
+        "reservation/post_detail.html",
         {
             "post": post,
             "comments": comments,

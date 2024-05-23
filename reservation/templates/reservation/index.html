@@ -6,7 +6,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- Reservation Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -15,7 +15,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                <img class="card-img-top" src="{% static 'images/resturant2.png' %}"
                                     alt="placeholder image">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
@@ -60,4 +60,4 @@
 
 <!-- index.html content ends here -->
 {% endblock %}
-{% block copyright %}Copyright 2023 Matt Rudge{% endblock %}
+{% block copyright %}Copyright Seema Vij Rudge{% endblock %}

@@ -10,20 +10,20 @@ from .forms import CommentForm
 
 class PostList(generic.ListView):
     """
-    Returns all published posts in :model:`blog.Post`
+    Returns all published posts in :model:`reservation.Post`
     and displays them in a page of six posts.
     **Context**
 
     ``queryset``
-        All published instances of :model:`blog.Post`
+        All published instances of :model:`reservation.Post`
     ``paginate_by``
         Number of posts per page.
 
     **Template:**
 
-    :template:`blog/index.html`
+    :template:`reservation/index.html`
     """
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects.filter(status=0)
     template_name = "reservation/index.html"
     paginate_by = 6
 
@@ -41,7 +41,7 @@ def post_detail(request, slug):
     ``comment_count``
         A count of approved comments related to the post.
     ``comment_form``
-        An instance of :form:`blog.CommentForm`
+        An instance of :form:`reservation.CommentForm`
 
     **Template:**
 
@@ -67,7 +67,7 @@ def post_detail(request, slug):
 
     return render(
         request,
-        "blog/post_detail.html",
+        "reservation/post_detail.html",
         {
             "post": post,
             "comments": comments,
@@ -84,11 +84,11 @@ def comment_edit(request, slug, comment_id):
     **Context**
 
     ``post``
-        An instance of :model:`blog.Post`.
+        An instance of :model:`reservation.Post`.
     ``comment``
         A single comment related to the post.
     ``comment_form``
-        An instance of :form:`blog.CommentForm`
+        An instance of :form:`reservation.CommentForm`
     """
     if request.method == "POST":
 
@@ -117,7 +117,7 @@ def comment_delete(request, slug, comment_id):
     **Context**
 
     ``post``
-        An instance of :model:`blog.Post`.
+        An instance of :model:`reservation.Post`.
     ``comment``
         A single comment related to the post.
     """

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %} Happy Leeks | Menu {% endblock %}
+
+{% block content %}
+
+<!-- Menu -->
+<div class="container menu mt-5 mb-5 p-3 rounded">
+    <div class="col-12">
+        <h1 class="text-center">Delhi Darbar' menu</h1>
+        <hr class="mx-5 text-center border border-dark border-2">
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for category in categories%}
+        <div class="col-lg-6 col-md-12">
+            <div class="card menu-card border border-0 d-flex justify-content-center h-100 mx-2">
+                <div class="card-body h-100 mx-2">
+                    <h4 class="card-title text-center">
+                        {{ category.name }}
+                    </h4>
+                    <div class="card-text">
+                        {% for item in menu_list %}
+                        {% if item.category == category %}
+                        <div class="menu-item align-self-center">
+                            <h5 class="mb-1">{{ item.name }}</h5>
+                            <p class="mb-3">{{ item.description }}
+                                <br>
+                                <strong>{{ item.price }}€</strong>
+                            </p>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- Menu -->
+
+{% endblock content %}

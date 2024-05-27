@@ -1,166 +1,346 @@
+/* Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/*General styles*/
+* {
+    margin: 0;
+    padding:0;
+}
+
 body {
-    background-color: #F9FAFC;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #3a3a3a;
+    min-height: 100vh;
+    display: flex;
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+
+/*Navigation bar */
+
+#navbar {
+    background-color: rgba(183, 198, 144, 0.3);
 }
 
-.red-o {
-    color: #E84610;
+.navbar {
+    padding: 0rem;
 }
 
-.thin {
-    font-weight: 300;
+.navbar-brand {
+    padding: 1rem 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2rem;
 }
 
-.light-bg {
-    background-color: #fff;
+.navbar-nav {
+    padding-right: 4rem;
+    justify-content: space-between;
+    gap: 3rem;
+    --bs-nav-link-hover-color: #000;
+}
+.navbar ul a {
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
 
-.dark-bg {
-    background-color: #445261;
+
+/* About section */
+
+#about {
+    background-color: #FFCFC2;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
+
+.intro-about-section {
+    line-height: 2rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
 }
 
-.card {
-    border: none;
-    background-color: transparent;
+.about-section {
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
 }
 
-.image-container {
-    position: relative;
+.cafe-inside {
+    height: 300px;
+    width: 400px;
+    align-items: center;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #188181;
-}
 
-.scale {
-    width: 100%;
-    height: auto;
-}
+/* Gallery section */
 
-.author {
-    color: white;
-    margin: 4px;
+#gallery h1 {
     text-transform: uppercase;
+    letter-spacing: 0.3rem;
 }
 
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
+#gallery img {
+    width: 325px;
+    height: 200px;
+    margin: 5px 0;
 }
 
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
+/* Essential information section */
+
+#info {
+    background-color: #E0E0E0;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+div.col-lg-7.col-md-12.align-self-center {
+    text-align: center;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+#get-in-touch {
+    background-color: #E3F2FD;
 }
 
+#info h4 {
+    font-family: 'Playfair Display', sans-serif;
 
-.profile-image {
-    width: 75%;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
+#info h5 {
+    font-weight: 500;
     text-decoration: underline;
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
+#info p, .guest p {
+    line-height: 0.2rem;
+    font-size: small;
 }
 
-.btn-delete {
-    color: #fff;
-    background: #E84610;
+/* Menu */
+.menu {
+    background-color: rgb(255, 207, 194, 0.7);
+    margin-bottom: 48px;
 }
 
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
+.menu h1, .guest h1 {
+    font-family: 'Playfair Display', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
 }
 
-.faded {
-    color: rgb(172, 175, 175);
+.menu-card {
+    color: #FAFAFA;
+    background-color: rgb(14, 100, 97, 0.8);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4)
 }
 
-.approval {
-    color: rgb(222, 146, 168);
+.card-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
+.menu-item h5 {
+    letter-spacing: 0.1rem;
+}
+
+.menu-item p {
+    font-size: small;
+    font-style: italic;
+}
+
+/* Login */
+
+.login-form {
+    background-color: #FFCFC2;
+}
+
+.btn-secondary {
+    background-color: #0E6461;
+    color :#FAFAFA
+}
+
+.btn-secondary:hover {
+    color: #0E6461;
+    background-color: #FAFAFA;
+}
+
+.login-form a {
+    color: #0E6461;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    color: #FAFAFA;
+}
+
+.img-login {
+    margin: 0.5rem;
+}
+
+/* Table Booking */
+
+.booking {
+    background-color: #FFCFC2;
+}
+
+.guest input , 
+.name-phone input {
+    background-color: #FFCFC2;
+    border: 1px solid #FAFAFA;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    width:100%;
+}
+
+.guest input:hover {
+    background-color: rgb(255, 226, 218);
+    border-color: #3a3a3a;
+}
+
+.name-phone ::placeholder{
+    text-align: start;
+    font-size: small;
+    font-weight: 100;
+}
+.date input,
+.time input {
+    background-color: #FFCFC2;
+    border: 1px solid #FAFAFA;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    width:75%;
+}
+
+.booking .btn {
+    width: 50%;
+}
+
+/* Manage Booking */
+
+.manage {
+    background-color: #FFCFC2;
+}
+
+.manage h4 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.manage .btn {
+    width: 25%;
+}
+
+.manage .btn-success {
+    background-color: #0E6461;
+}
+
+.manage .btn-success:hover {
+    background-color: rgb(14, 100, 97, 0.7);
+}
+/* Footer */
+
+.footer {
+    margin-top: auto;
+    background-color: hsl(76, 32%, 67%, 0.3);
+} 
+
+.social-networks {
+    text-align: center;
+    margin: 0;
+}
+
+.social-networks>li {
+    display: inline;
+    
+}
+
+.social-networks i {
+    font-size: 1.4rem;
+    align-items: center;
+    margin: 0.4rem auto;
+    padding: 0 20px;
+    color: #0E6461;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: x-small;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+    #gallery img {
+        width: 250px;
+        height: 150px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #gallery img {
+        width: 400px;
+        height: 250px;
+        margin: 5px 0;
+    }
+
+    .manage .btn {
+        width: 6rem;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #gallery img {
+        width: 250px;
+        height: 150px;
+        margin: 5px 0;
+    }
+
+    .guest h1 {
+        font-size: 2rem;
+    }
+
+    .guest p {
+        line-height: 1rem;
+    }
+
+    .manage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+    .navbar-nav {
+       padding: 0px;
+       gap: 0.2rem;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+        .booking .card{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        iframe {
+            width: 300px;
+            height: 200px;
+        }
+
+        .card {
+            margin-left: 2px;
+        }
+
+        .manage .btn {
+            width: 6rem;
+        }
+    }

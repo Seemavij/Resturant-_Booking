@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %} Delhi Darbar | Manage your table booking {% endblock %}
+
+{% block content %}
+<div class="container card card-body mt-5 mb-5 mx-auto booking">
+    <form method="POST">
+        {{ form.non_field_errors }}
+        {% csrf_token %}
+
+        <div class="row guest justify-content-center">
+
+            <div class="col-md-6 mt-4 mb-4">
+                <h1 class="text-center">Manage your Table Booking:</h1>
+                <h5 class="text-center">Select number of guests:</h5>
+                <div class="row justify-content-around mx-5">
+                    <div class="col-lg-5 col-md-12 text-center m-1">
+                        {{ form.number_of_guests.errors }}
+                        {{ form.number_of_guests }}
+                    </div>
+                </div>
+                <p class="text-center mt-3">For a booking for more than 4 people please call the restaurant.</p>
+            </div>
+        </div>
+        <div class="row name-phone justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="row justify-content-around mx-5">
+                    <div class="col-lg-5 col-md-12 text-center m-1">
+                        {{ form.name.errors }}
+                        <p>Name:</p>
+                        {{ form.name }}
+                    </div>
+                    <div class="col-lg-5 col-md-12 text-center m-1">
+                        {{ form.phone.errors }}
+                        <p>Phone Number:</p>
+                        {{ form.phone }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row date justify-content-center">
+            <div class="col-md-6 mt-4 mb-4">
+                <h5 class="text-center">Please select a date:</h5>
+                <div class="row justify-content-around mx-5">
+                    <div class="col-lg-5 col-md-12 text-center m-1">
+                        {{ form.date.errors }}
+                        {{ form.date }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row time justify-content-center">
+            <div class="col-md-6 mt-4 mb-4">
+                <h5 class="text-center">Please select a time:</h5>
+                <div class="row justify-content-around mx-5">
+                    <div class="col-lg-5 col-md-12 text-center m-1">
+                        {{ form.time.errors }}
+                        {{ form.time }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-12 text-center m-1">
+                <button class="btn btn-secondary btn-sm justify-content-center" type="button" value="UPDATE"
+                    data-bs-toggle="modal" data-bs-target="#editMessage">Update Reservation</button>
+            </div>
+        </div>
+        <div class="modal fade" id="editMessage" tabindex="-1" aria-labelledby="editMessageLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editMessageLabel">Reservation Update Request</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to update your reservation?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="mt-2 mb-3 btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="mt-2 mb-3 btn btn-secondary">UPDATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

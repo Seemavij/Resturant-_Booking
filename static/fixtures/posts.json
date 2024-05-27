@@ -1,6 +1,6 @@
 [
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Breakpoints or Breaking Point? Surviving JavaScript Debugging",
@@ -14,7 +14,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Django Unchained: Breaking Free from the Confines of Vanilla Web Development",
@@ -28,7 +28,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Indenting My Life Away: Musings of a Python Newbie",
@@ -42,7 +42,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "The Softer Side of Code: Essential Soft Skills for Software Developers",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Cracking the Coding Interview: Strategies and Tips",
@@ -70,7 +70,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Building a Portfolio That Pops: Showcasing Your Developer Skills",
@@ -84,7 +84,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Agile, Scrum, and Beyond: Navigating Project Management Methodologies",
@@ -98,7 +98,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Decoding Project Management: A No-Nonsense Guide to Agile, Scrum, and More",
@@ -112,7 +112,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "From Spaghetti to Clean Code: The Ultimate Code Refactoring Field Guide",
@@ -126,7 +126,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "The Evolution of Programming Languages: A Look Through the Ages",
@@ -140,7 +140,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Machine Learning for Developers: Breaking Down the Hype",
@@ -154,7 +154,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Choosing Your First Programming Language",
@@ -168,7 +168,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "Google-Fu: Mastering the Art of Efficient Searching for Developers",
@@ -182,7 +182,7 @@
         }
     },
     {
-        "model": "reservation.post",
+        "model": "blog.post",
         "pk": null,
         "fields": {
             "title": "SOS to SOLVED: Crafting Questions That Get You Unstuck in Development",

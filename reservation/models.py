@@ -1,50 +1,35 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-
-STATUS = ((0, "Draft"), (1, "Published"))
-
-# Create your models here.
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
-class Post(models.Model):
+TIME_CHOICES = (
+    ('08:00 AM', '08:00 AM'),
+    ('09:00 AM', '09:00 AM'),
+    ('10:00 AM', '10:00 AM'),
+    ('11:00 AM', '11:00 AM'),
+    ('12:00 PM', '12:00 PM'),
+    ('13:00 PM', '13:00 PM'),
+    ('14:00 PM', '14:00 PM'),
+    ('15:00 PM', '15:00 PM'),
+)
+
+
+class Reservation(models.Model):
+
     """
-    Stores a single reservation post entry related to :model:`auth.User`.
+    Creates model for table reservation
     """
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="reservation_posts"
-    )
-    featured_image = CloudinaryField('image', default='placeholder')
-    content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-    excerpt = models.TextField(blank=True)
-    updated_on = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        ordering = ["-created_on"]
+    name = models.CharField(max_length=30)
+    phone = models.IntegerField()
+    number_of_guests = models.IntegerField(default=1,
+                                           validators=[MaxValueValidator(4),
+                                                       MinValueValidator(1)])
+    date = models.DateField()
+    time = models.CharField(
+        max_length=8, choices=TIME_CHOICES, default='08:00 AM',)
 
     def __str__(self):
-        return f"{self.title} | written by {self.author}"
-
-
-class Comment(models.Model):
-    """
-    Stores a single comment entry related to :model:`auth.User`
-    and :model:`reservation.Post`.
-    """
-    post = models.ForeignKey(Post, on_delete=models.CASCADE,
-                             related_name="comments")
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="Rashid")
-    body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
-
-    class Meta:
-        ordering = ["created_on"]
-
-    def __str__(self):
-        return f"Comment {self.body} by {self.author}"
+        return self.name

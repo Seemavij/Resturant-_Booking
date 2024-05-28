@@ -1,135 +1,77 @@
-from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views import generic, View
 from django.contrib import messages
-from django.http import HttpResponseRedirect
-from .models import Post, Comment
-from .forms import CommentForm
+from .models import Reservation
+from .forms import ReservationForm
 
-# Create your views here.
-
-
-class PostList(generic.ListView):
+def table_reservation(request):
     """
-    Returns all published posts in :model:`reservation.Post`
-    and displays them in a page of six posts.
-    **Context**
-
-    ``queryset``
-        All published instances of :model:`reservation.Post`
-    ``paginate_by``
-        Number of posts per page.
-
-    **Template:**
-
-    :template:`reservation/index.html`
+    Lets user create a Reservation
     """
-    queryset = Post.objects.filter(status=0)
-    template_name = "reservation/index.html"
-    paginate_by = 6
+    booking_form =ReservationForm () 
 
-
-def post_detail(request, slug):
-    """
-    Display an individual :model:`reservation.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`reservation.Post`.
-    ``comments``
-        All approved comments related to the post.
-    ``comment_count``
-        A count of approved comments related to the post.
-    ``comment_form``
-        An instance of :form:`reservation.CommentForm`
-
-    **Template:**
-
-    :template:`reservation/post_detail.html`
-    """
-    queryset = Post.objects.filter(status=1)
-    post = get_object_or_404(queryset, slug=slug)
-    comments = post.comments.all().order_by("-created_on")
-    comment_count = post.comments.filter(approved=True).count()
-    if request.method == "POST":
-        comment_form = CommentForm(data=request.POST)
-        if comment_form.is_valid():
-            comment = comment_form.save(commit=False)
-            comment.author = request.user
-            comment.post = post
-            comment.save()
-            messages.add_message(
-                request, messages.SUCCESS,
-                'Comment submitted and awaiting approval'
-            )
-
-    comment_form = CommentForm()
-
-    return render(
-        request,
-        "reservation/post_detail.html",
-        {
-            "post": post,
-            "comments": comments,
-            "comment_count": comment_count,
-            "comment_form": comment_form
-        },
-    )
-
-
-def comment_edit(request, slug, comment_id):
-    """
-    Display an individual comment for edit.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`reservation.Post`.
-    ``comment``
-        A single comment related to the post.
-    ``comment_form``
-        An instance of :form:`reservation.CommentForm`
-    """
-    if request.method == "POST":
-
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        comment = get_object_or_404(Comment, pk=comment_id)
-        comment_form = CommentForm(data=request.POST, instance=comment)
-
-        if comment_form.is_valid() and comment.author == request.user:
-            comment = comment_form.save(commit=False)
-            comment.post = post
-            comment.approved = False
-            comment.save()
-            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+    if request.method == 'POST':
+        reservation_form = ReservationForm(request.POST)
+        if reservation_form.is_valid():
+            reservation_form.instance.name = request.user
+            reservation_form.save()
+            messages.success(request, 'Reservation successful.')
+            return redirect(reverse('reservation:manage_booking'))
         else:
-            messages.add_message(request, messages.ERROR,
-                                 'Error updating comment!')
-
-    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-def comment_delete(request, slug, comment_id):
-    """
-    Delete an individual comment.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`reservation.Post`.
-    ``comment``
-        A single comment related to the post.
-    """
-    queryset = Post.objects.filter(status=1)
-    post = get_object_or_404(queryset, slug=slug)
-    comment = get_object_or_404(Comment, pk=comment_id)
-
-    if comment.author == request.user:
-        comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
+            messages.error(request, 'Reservation unsuccessful. Please try again.')
     else:
-        messages.add_message(request, messages.ERROR,
-                             'You can only delete your own comments!')
+        reservation_form = ReservationForm()
 
-    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    context = {
+        'form': reservation_form
+    }
+    return render(request, '../templates/reservation/index.html', context)
+
+
+class BookingsList(generic.View):
+    """
+    Customer will be able to view their reservation/s
+    """
+    model = Reservation
+    queryset = Reservation.objects.all()
+    template_name = 'manage_reservation.html'
+    paginate_by = 3
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            bookings = Booking.objects.filter(name=request.user)
+
+            context = {
+                'reservation': reservation,
+            }
+
+            return render(request, 'manage_reservation.html', context)
+
+
+def edit_reservation(request, reservation_id):
+    """
+    Lets user updated their reservation
+    """
+    reservation = get_object_or_404(Reservation, id=reservation_id)
+    if request.method == 'POST':
+        reservation_form = ReservationForm(request.POST, instance=reservation)
+        if reservation_form.is_valid():
+            reservation_form.save()
+            messages.success(request, 'Reservation updated successfully.')
+            return redirect('reservation:manage_reservation')
+        else:
+            messages.error(request, 'Update unsuccessful. Please try again.')
+
+    reservation_form = ReservationForm(instance=reservation)
+
+    return render(request, 'edit_reservation.html', {'form': reservation_form})
+
+
+def delete_reservation(request, reservation_id):
+    """
+    Lets user delete their reservation
+    """
+    reservation = get_object_or_404(Reservation, id=reservation_id)
+    reservation.delete()
+    messages.success(request, 'Reservation deleted successfully.')
+    return redirect('reservation:manage_reservation')

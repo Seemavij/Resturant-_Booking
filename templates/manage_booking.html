@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
-<title>{% block title %} Happy Leeks | Manage Bookings {% endblock %}</title>
+<title>{% block title %} Delhi Darbar | Manage Booking {% endblock %}</title>
 
 {% block content %}
 <div class="row row-cols-1 row-cols-md-2 m-3 g-4">
-  {% for booking in bookings %}
+  {% for Booking in Booking %}
   <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
     <div class="card manage border border-0 d-flex justify-content-center h-100 mx-2">
       <div class="card-body h-100 mx-2">
         <h4 class="text-center">
-          Name of booking: {{ booking.name }}
+          Name of Booking: {{ Booking.name }}
         </h4>
         <div class="card-text">
           <div class="align-self-center">

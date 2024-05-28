@@ -1,14 +1,38 @@
 from django import forms
-from .models import Comment
+from .models import Reservation
 
 
-class CommentForm(forms.ModelForm):
+class ReservationForm(forms.ModelForm):
     """
-    Form class for users to comment on a post
+    Table Reservation form
     """
+
+    number_of_guests = forms.IntegerField(required=True,
+                                          widget=forms.TextInput(
+                                              attrs={
+                                                  'pattern': '[1-4]+',
+                                                  'title': 'Enter a number between 1 and 4.'
+                                              }
+
+                                          ))
+    date = forms.DateField(input_formats=['%d/%m/%Y'],
+                           widget=forms.DateInput(attrs={
+                               'placeholder': 'dd/mm/yyyy'
+                           }))
+
+    name = forms.CharField(required=True, widget=forms.TextInput(
+        attrs={'pattern': '[A-Za-z ]+', 'title': 'Enter characters only.'}))
+
+    phone = forms.IntegerField(required=True,
+                               widget=forms.TextInput(
+                                   attrs={
+                                       'placeholder': '0123456789',
+                                       'pattern': '[0123456789]+',
+                                       'title': 'Enter digits only.'
+                                   }
+                               )
+                               )
+
     class Meta:
-        """
-        Specify the django model and order of the fields
-        """
-        model = Comment
-        fields = ('body',)
+        model = Reservation
+        fields = '__all__'

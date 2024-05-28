@@ -1,16 +1,21 @@
-from . import views
 from django.urls import path
+from . import views
+
+
+app_name = 'reservation'
 
 urlpatterns = [
 
-     path('reservation', views.post_detail, name ='reservation'),
-     path('', views.PostList.as_view(), name='home'),
-     path('<slug:slug>/', views.post_detail, name="post_detail"),
-     path('<slug:slug>/edit_comment/<int:comment_id>',
-         views.comment_edit, name='comment_edit'),
-     path('<slug:slug>/delete_comment/<int:comment_id>',
-         views.comment_delete, name='comment_delete'),
-  
+     path('', views.table_reservation, name='table_reservation'),
+     path('edit_reservation/<reservation_id>/', views.edit_reservation,
+         name='edit_reservation'),
+     path('delete_reservation/<reservation_id>/', views.delete_reservation,
+         name='delete_reservation')
 ]
 
 
+
+
+
+
+  

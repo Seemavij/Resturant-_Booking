@@ -4,12 +4,12 @@
 <html lang="en">
 
 <head>
-
+    <title>Reservation</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Delhi Darbar. Vegan Cafe serving breakfast, lunch and dinner.">
-    <meta name="keywords" content="food, cafe, vegan, breakfast, lunch, coffee, good vibes">
+    <meta name="keywords" content="food, cafe, vegan, breakfast, lunch, coffee, dinner & good vibes">
     <meta name="author" content="Seema Vij">
     <title>{% block title %} Delhi Darbar |Asian cuisine & Vegan Cafe 🌱 {% endblock %}</title>
 
@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item align-self-end">
-                            <a class="nav-link active " aria-current="page" href="{% url 'home' %}">Home</a>
+                            <a class="nav-link active " aria-current="page" href="{% url 'resturant:resturant' %}">Home</a>
                         </li>
                         <li class="nav-item align-self-end">
                             <a class="nav-link" href="{% url 'menu:menu_list' %}">Menu</a>

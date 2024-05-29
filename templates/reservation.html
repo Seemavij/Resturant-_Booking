@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="container card card-body mt-5 mb-5 mx-auto booking">
-    <form action="{% url 'reservation:table_booking' %}" method="POST">
+    <form action="{% url 'reservation:table_reservation' %}" method="POST">
         {{ form.non_field_errors }}
         {% csrf_token %}
 

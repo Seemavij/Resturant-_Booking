@@ -9,6 +9,8 @@
 
  {% for Reservation in Reservation %}
 
+ <img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717091551/reservation_mutkun.png"
+        alt="reservation">
 <div class="container card card-body mt-5 mb-5 mx-auto reservation">
     <form action="{% url 'reservation:table_reservation' %}" method="POST">
         {{ form.non_field_errors }}
@@ -25,7 +27,7 @@
                         {{ form.number_of_guests }}
                     </div>
                 </div>
-                <p class="text-center mt-3">For a booking for more than 4 people please call the restaurant.</p>
+                <p class="text-center mt-3">For a reservation for more than 4 people please call the restaurant.</p>
             </div>
 
         </div>

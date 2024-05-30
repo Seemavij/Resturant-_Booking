@@ -2,7 +2,14 @@
 {% block title %} Delhi Darbar | Book your Table {% endblock %}
 
 {% block content %}
-<div class="container card card-body mt-5 mb-5 mx-auto booking">
+
+ <!-- Photo of Restaurant-->
+ <img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717011753/resturant_5_xfrxly.png"
+ alt="Restaurant image">
+
+ {% for Reservation in Reservation %}
+
+<div class="container card card-body mt-5 mb-5 mx-auto reservation">
     <form action="{% url 'reservation:table_reservation' %}" method="POST">
         {{ form.non_field_errors }}
         {% csrf_token %}

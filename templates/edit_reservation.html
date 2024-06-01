@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
-{% block title %} Delhi Darbar | Manage your table booking {% endblock %}
+{% block title %} Delhi Darbar | Manage your table reservation {% endblock %}
 
 {% block content %}
-<div class="container card card-body mt-5 mb-5 mx-auto booking">
+<div class="container card card-body mt-5 mb-5 mx-auto reservation">
     <form method="POST">
         {{ form.non_field_errors }}
         {% csrf_token %}
@@ -10,7 +10,7 @@
         <div class="row guest justify-content-center">
 
             <div class="col-md-6 mt-4 mb-4">
-                <h1 class="text-center">Manage your Table Booking:</h1>
+                <h1 class="text-center">Manage your Table reservation:</h1>
                 <h5 class="text-center">Select number of guests:</h5>
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
@@ -18,7 +18,7 @@
                         {{ form.number_of_guests }}
                     </div>
                 </div>
-                <p class="text-center mt-3">For a booking for more than 4 people please call the restaurant.</p>
+                <p class="text-center mt-3">For a reservation for more than 4 people please call the restaurant.</p>
             </div>
         </div>
         <div class="row name-phone justify-content-center">

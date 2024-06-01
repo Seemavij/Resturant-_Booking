@@ -3,14 +3,13 @@
 
 {% block content %}
 
- <!-- Photo of Restaurant-->
- <img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717011753/resturant_5_xfrxly.png"
- alt="Restaurant image">
+<!-- Photo of Restaurant-->
+<img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717011753/resturant_5_xfrxly.png" alt="Restaurant image">
 
- {% for Reservation in Reservation %}
+{% for Reservation in Reservation %}
 
- <img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717091551/reservation_mutkun.png"
-        alt="reservation">
+<img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717091551/reservation_mutkun.png" alt="reservation">
+<img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717089067/coffee_z3imut.png" alt="cup of coffee">
 <div class="container card card-body mt-5 mb-5 mx-auto reservation">
     <form action="{% url 'reservation:table_reservation' %}" method="POST">
         {{ form.non_field_errors }}

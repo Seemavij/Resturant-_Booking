@@ -65,7 +65,7 @@ body {
     text-align: center;
 }
 
-.cafe-inside {
+.Resturant-inside {
     height: 300px;
     width: 400px;
     align-items: center;
@@ -120,6 +120,7 @@ div.col-lg-7.col-md-12.align-self-center {
     margin-bottom: 48px;
 }
 
+    
 .menu h1, .guest h1 {
     font-family: 'Playfair Display', sans-serif;
     text-transform: uppercase;
@@ -214,7 +215,7 @@ div.col-lg-7.col-md-12.align-self-center {
     width:75%;
 }
 
-.booking .btn {
+.Reservation .btn {
     width: 50%;
 }
 

@@ -120,7 +120,14 @@ div.col-lg-7.col-md-12.align-self-center {
     margin-bottom: 48px;
 }
 
-    
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 50%;
+}  
+
 .menu h1, .guest h1 {
     font-family: 'Playfair Display', sans-serif;
     text-transform: uppercase;

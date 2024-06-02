@@ -2,7 +2,7 @@ Delhi Darbar :
 * Delhi Darbar is a Asian Resturant and vegan Cafe based in Dublin that welcomes all people and serves delicious brunch items to customers. The goal is to create a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. The website includes a Menu, Reservation options and account creations for the individual user.
 
 
-* Delhi Darbar |Asian cuisine & Vegan Cafe 🌱:
+* Delhi Darbar |Asian cuisine & Cafe 🌱:
 
 * Delhi Darbar is a Asian Resturant and vegan cafe that goes beyond serving delicious plant-based food!
  

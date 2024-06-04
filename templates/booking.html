@@ -6,19 +6,19 @@
 <!-- Photo of Restaurant-->
 <img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717011753/resturant_5_xfrxly.png" alt="Restaurant image">
 
-{% for Reservation in Reservation %}
+{% for Booking in Booking %}
 
 <img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717091551/reservation_mutkun.png" alt="reservation">
 <img src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717089067/coffee_z3imut.png" alt="cup of coffee">
 <div class="container card card-body mt-5 mb-5 mx-auto reservation">
-    <form action="{% url 'reservation:table_reservation' %}" method="POST">
+    <form action="{% url 'booking:table_booking' %}" method="POST">
         {{ form.non_field_errors }}
         {% csrf_token %}
 
         <div class="row guest justify-content-center">
 
             <div class="col-md-6 mt-4 mb-4">
-                <h1 class="text-center">Make a reservation:</h1>
+                <h1 class="text-center">Make a booking:</h1>
                 <h5 class="text-center">Select number of guests:</h5>
                 <div class="row justify-content-around mx-5">
                     <div class="col-lg-5 col-md-12 text-center m-1">
@@ -26,7 +26,7 @@
                         {{ form.number_of_guests }}
                     </div>
                 </div>
-                <p class="text-center mt-3">For a reservation for more than 4 people please call the restaurant.</p>
+                <p class="text-center mt-3">For a booking for more than 4 people please call the restaurant.</p>
             </div>
 
         </div>
@@ -70,7 +70,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-12 text-center m-1">
-                <button class="btn btn-secondary btn-sm justify-content-center" type="submit">Make Reservation</button>
+                <button class="btn btn-secondary btn-sm justify-content-center" type="submit">Make Booking</button>
             </div>
         </div>
     </form>

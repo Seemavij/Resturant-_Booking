@@ -32,9 +32,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-^5q3wu=#mjr3c!gy^6b)_=35evl0-#=iw*!*-l!c8u&kf5k8xb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-n4g5ejum3y2.ws-eu114.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-seemavij-resturantbooki-4h1piy1bfet.ws-eu114.gitpod.io','.herokuapp.com']
 
 
 
@@ -125,8 +125,9 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.codeanyapp.com",
-    "https://*.herokuapp.com"
+"https://*.codeanyapp.com",
+"https://*.herokuapp.com",
+"https://*.gitpod.io"
 ]
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

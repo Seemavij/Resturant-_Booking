@@ -82,6 +82,6 @@ Colour Scheme :
 
 * This website uses a palette of lighter gray and blue tones, as well as light and dark green and light pink tones. It also uses some variants of the same colour scheme belonging to their colour family. It was created by using Coolors. 
 
-* 5C4742 835F5D  B7ADCF 535657 5A2A27 8D5B4C 774F4D
+* 5C4742 835F5D  B7ADCF 535657 5A2A27 8D5B4C 774F4D B098A4
 
 Wireframes :

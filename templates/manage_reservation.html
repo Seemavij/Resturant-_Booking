@@ -1,22 +1,23 @@
 {% extends 'base.html' %}
-<title>{% block title %} Delhi Darbar | Manage Booking {% endblock %}</title>
+<title>{% block title %} Delhi Darbar | Manage Reservation {% endblock %}</title>
 
 {% block content %}
 <div class="row row-cols-1 row-cols-md-2 m-3 g-4">
+  {% for reservation in reservation %}
   <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
     <div class="card manage border border-0 d-flex justify-content-center h-100 mx-2">
       <div class="card-body h-100 mx-2">
         <h4 class="text-center">
-          Name of Booking: {{ Booking.name }}
+          Name of reservation: {{ reservation.name }}
         </h4>
         <div class="card-text">
           <div class="align-self-center">
-            <p class="mb-1"><strong>Date & Time:</strong> {{ booking.date }} {{ booking.time }}</p>
-            <p class="mb-3"><strong>Number of Guests:</strong> {{ booking.number_of_guests }}</p>
+            <p class="mb-1"><strong>Date & Time:</strong> {{ reservation.date }} {{ reservation.time }}</p>
+            <p class="mb-3"><strong>Number of Guests:</strong> {{ reservation.number_of_guests }}</p>
           </div>
-          <a href="{% url 'booking:edit_booking' booking.id %}" class="btn btn-success">Edit</a>
-          <a href="{% url 'booking:delete_booking' booking.id %}" class="btn btn-danger"
-            data-bs-toggle="modal" data-bs-target="#deleteMessage">Delete</a>
+          <a href="{% url 'reservation:edit_reservation' reservation.id %}" class="btn btn-success">Edit</a>
+          <a href="{% url 'reservation:delete_reservation' reservation.id %}" class="btn btn-danger" data-bs-toggle="modal"
+            data-bs-target="#deleteMessage">Delete</a>
           <div class="modal fade" id="deleteMessage" tabindex="-1" aria-labelledby="deleteMessageLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -26,12 +27,11 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  Are you sure you want to delete your booking?
+                  Are you sure you want to delete your reservation?
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="mt-2 mb-3 btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-                  <a class="mt-2 mb-3 btn btn-secondary"
-                    href="{% url 'booking:delete_booking' booking.id %}">DELETE</a>
+                  <a class="mt-2 mb-3 btn btn-secondary" href="{% url 'reservation:delete_reservation' reservation.id %}">DELETE</a>
                 </div>
               </div>
             </div>

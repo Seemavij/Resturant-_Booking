@@ -8,7 +8,7 @@ def table_reservation(request):
     """
     Lets user create a Reservation
     """
-    booking_form =ReservationForm () 
+    reservation_form =ReservationForm () 
 
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST)
@@ -28,7 +28,7 @@ def table_reservation(request):
     return render(request, '../templates/reservation/index.html', context)
 
 
-class BookingsList(generic.View):
+class ReservationList(generic.View):
     """
     Customer will be able to view their reservation/s
     """
@@ -39,8 +39,9 @@ class BookingsList(generic.View):
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
-            bookings = Booking.objects.filter(name=request.user)
-
+            reservation = Reservation.objects.filter(name=request.user)
+ 
+            
             context = {
                 'reservation': reservation,
             }

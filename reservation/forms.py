@@ -10,8 +10,8 @@ class ReservationForm(forms.ModelForm):
     number_of_guests = forms.IntegerField(required=True,
                                           widget=forms.TextInput(
                                               attrs={
-                                                  'pattern': '[1-4]+',
-                                                  'title': 'Enter a number between 1 and 4.'
+                                                  'pattern': '[1-6]+',
+                                                  'title': 'Enter a number between 1 and 6.'
                                               }
 
                                           ))

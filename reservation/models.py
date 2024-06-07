@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-
 TIME_CHOICES = (
     ('08:00 AM', '08:00 AM'),
     ('09:00 AM', '09:00 AM'),
@@ -16,10 +15,12 @@ TIME_CHOICES = (
 )
 
 
+
+
 class Reservation(models.Model):
 
     """
-    Creates model for table reservation
+    Creates model for table Booking
     """
 
     name = models.CharField(max_length=30)

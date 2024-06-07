@@ -2,7 +2,7 @@
 {% block title %} Delhi Darbar | Book your Table {% endblock %}
 
 {% block content %}
-<div class="container card card-body mt-5 mb-5 mx-auto booking">
+<div class="container card card-body mt-5 mb-5 mx-auto reservation">
     <form action="{% url 'reservation:table_reservation' %}" method="POST">
         {{ form.non_field_errors }}
         {% csrf_token %}
@@ -18,7 +18,7 @@
                         {{ form.number_of_guests }}
                     </div>
                 </div>
-                <p class="text-center mt-3">For a reservation for more than 4 people please call the restaurant.</p>
+                <p class="text-center mt-3">For a reservation for more than 6 people please call the restaurant.</p>
             </div>
 
         </div>

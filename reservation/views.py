@@ -8,7 +8,7 @@ def table_reservation(request):
     """
     Lets user create a Reservation
     """
-    reservation_form =ReservationForm () 
+    reservation_form = ReservationForm () 
 
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST)
@@ -16,7 +16,7 @@ def table_reservation(request):
             reservation_form.instance.name = request.user
             reservation_form.save()
             messages.success(request, 'Reservation successful.')
-            return redirect(reverse('reservation:manage_booking'))
+            return redirect(reverse('reservation:manage_reservation'))
         else:
             messages.error(request, 'Reservation unsuccessful. Please try again.')
     else:
@@ -25,7 +25,7 @@ def table_reservation(request):
     context = {
         'form': reservation_form
     }
-    return render(request, '../templates/reservation/index.html', context)
+    return render(request, '../templates/reservation.html', context)
 
 
 class ReservationList(generic.View):

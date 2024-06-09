@@ -26,7 +26,7 @@ class Reservation(models.Model):
     name = models.CharField(max_length=30)
     phone = models.IntegerField()
     number_of_guests = models.IntegerField(default=1,
-                                           validators=[MaxValueValidator(4),
+                                           validators=[MaxValueValidator(6),
                                                        MinValueValidator(1)])
     date = models.DateField()
     time = models.CharField(

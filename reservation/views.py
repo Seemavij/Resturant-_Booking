@@ -47,7 +47,7 @@ class ReservationList(generic.View):
                 'reservation': reservation,
             }
 
-            return render(request, '../templates/manage_reservation.html', context)
+            return render(request, 'manage_reservation.html', context)
 
 
 

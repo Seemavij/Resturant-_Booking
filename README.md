@@ -66,27 +66,39 @@ Contact Us
 * As a site user I can visit the restaurant's landing page so that I can find information about the restaurant.
 * As a site user I can view the menu so that I know what food the restaurant has to offer.
 * As a site user I can register an account so that I can book a table for one or more guests at a particular time and date.
-* As a logged in user I can make a booking so that I can book a table/multiple tables for one or more guests at a specific date and 
-  time, view and update my existing booking/s or delete any existing booking.
+* As a logged in user I can make a reservation so that I can book a table/multiple tables for one or more guests at a specific date and 
+  time, view and update my existing reservation/s or delete any existing reservation.
 * As a logged-in user I can see my login status so that I know that I am logged in.
 * As a site user I can find links to their social media so that I can follow the restaurant on social media.
 * As a site user I can view essential information so that I can find out about the address, business hours, phone number and other important information.
 * As a site user I can view photos so that I get a feel of the atmosphere and what style of food is served in the restaurant.
 Admin
 * As an admin I can manage items on the menu so that I can create, view, update and delete any items.
-* As an admin I can manage the bookings so that I can create, view, update and delete any bookings and avoid any double bookings.
+* As an admin I can manage the reservation so that I can create, view, update and delete any reservation and avoid any double reservations.
 
 Design
 
-Colour Scheme :
+* Imagery :
+Imagery is used regarding restaurant environment and food content on the website. They are taken from various websites, which are credited down below in the Credits section.
+
+* Colour Scheme :
 
 * This website uses a palette of lighter gray and blue tones, as well as light and dark green and light pink tones. It also uses some variants of the same colour scheme belonging to their colour family. It was created by using Coolors. 
+
 * cooler.png
-* 5C4742 835F5D  B7ADCF 535657 5A2A27 8D5B4C 774F4D B098A4
- (static/images/cooler.png)
+
+$ F28482 84A59D F6BD60 DC9E82 DC9E82 93C0A4
+ ![alt image](static/images/palete.png)
+ 
 
   Wireframes :
 
+Typography :
+
+I have imported the following Google Fonts:
+
+Playfair Display 400, 500 for headings on the website.
+Open Sans 300, 400, 600 for the body text on the website.
 
 Local Development :
 
@@ -126,15 +138,10 @@ $ Kera Cudmore's sample readme - used when creating README.md and TESTING.md
 
 
 
-* A responsive footer :
-$ The footer contains the social media icons of Facebook, Instagram, Twitter, and Pinterest, which open all in a new tab when clicked on.
-$ It also contains the copyright with the current year.
-(static/images/footer.png)
-
 * Home Page :
 $ The Homepage is the landing page of the website, where a user lands first when opening the url. It contains the navbar at the top and footer at the bottom. Between the user can find a small about section with an image of the interior of the restaurant, a gallery section to view some of the dishes, the decoration and atmosphere of the restaurant. Below is the essential information section, where the user can find the location, opening times and contact details.
 
-(static/images/homepage.png)
+![alt image](static/images/homepage.png)
 
 
 * Deployment :
@@ -142,6 +149,13 @@ $ The Homepage is the landing page of the website, where a user lands first when
 $ Logout Page :
 
 $ The Logout Booking page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. The user is asked to confirm if they want to sign out. If user proceeds, they will be directed to the landing page. A message will pop up to let them know that they have logged out successfully. Logout Page
+
+
+* A responsive footer :
+$ The footer contains the social media icons of Facebook, Instagram, Twitter, and Pinterest, which open all in a new tab when clicked on.
+$ It also contains the copyright with the current year.
+![alt image](static/images/footer.png)
+
 
 * Future Considerations
 $ Future features that could be implemented on the website could include being able to add reviews and view reviews of other customers. Another implementation could be an online ordering system.

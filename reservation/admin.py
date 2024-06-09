@@ -3,6 +3,7 @@ from .models import Reservation
 from django_summernote.admin import SummernoteModelAdmin
 
 
+
 @admin.register(Reservation)
 class BookingAdmin(admin.ModelAdmin):
     list_filter = ('time',)

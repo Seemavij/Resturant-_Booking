@@ -28,6 +28,7 @@ def table_reservation(request):
     return render(request, '../templates/reservation.html', context)
 
 
+
 class ReservationList(generic.View):
     """
     Customer will be able to view their reservation/s
@@ -46,7 +47,8 @@ class ReservationList(generic.View):
                 'reservation': reservation,
             }
 
-            return render(request, 'manage_reservation.html', context)
+            return render(request, '../templates/manage_reservation.html', context)
+
 
 
 def edit_reservation(request, reservation_id):

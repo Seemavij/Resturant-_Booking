@@ -20,12 +20,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', IndexPage.as_view(), name='index'),
-    path("", include('reservation.urls'), name='reservation-urls'),
-    path('resturant/', include ('resturant.urls'), name='resturant-urls'),
-    path('summernote/', include('django_summernote.urls')),
-    path('table_booking/', include('reservation.urls', namespace='table_booking')),
+  #  path("", include('reservation.urls'), name='reservation-urls'),
+  #  path('resturant/', include ('resturant.urls'), name='resturant-urls'),
+  #  path('summernote/', include('django_summernote.urls')),
+    path('table_reservation/', include('reservation.urls', namespace='table_reservation')),
     path('menu_list/', include('menu.urls', namespace='menu_list')),
-    path('manage_reservation/', include('reservation.urls', namespace='manage_reservation'))
+  #  path('manage_reservation/', include('reservation.urls', namespace='manage_reservation'))
 
  ]
 admin.site.site_header = 'Delhi Darbar AdminPanel'

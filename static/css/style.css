@@ -158,7 +158,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Login */
 
 .login-form {
-    background-color: #FFCFC2;
+    background-color: #9d4932;
 }
 
 .btn-secondary {
@@ -213,7 +213,7 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 .date input,
 .time input {
-    background-color: #FFCFC2;
+    background-color: #1abc7b;
     border: 1px solid #FAFAFA;
     border-radius: 4px;
     font-size: 15px;
@@ -229,7 +229,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Manage Booking */
 
 .manage {
-    background-color: #FFCFC2;
+    background-color: #c0b710;
 }
 
 .manage h4 {

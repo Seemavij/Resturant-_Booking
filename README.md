@@ -90,7 +90,7 @@ Admin
 Design
 
 * Imagery :
-
+![alt image](static/images/reservation.png)
 
 Imagery is used regarding restaurant environment and food content on the website. They are taken from various websites, which are credited down below in the Credits section.
 

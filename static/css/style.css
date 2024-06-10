@@ -116,7 +116,7 @@ div.col-lg-7.col-md-12.align-self-center {
 
 /* Menu */
 .menu {
-    background-color: rgba(38, 230, 230, 0.7);
+    background-color: rgba(223, 13, 128, 0.884);
     margin-bottom: 48px;
 }
 
@@ -136,8 +136,8 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 
 .menu-card {
-    color: #9e0dc7;
-    background-color: rgba(33, 161, 157, 0.8);
+    color: #0ba35d;
+    background-color: rgba(27, 211, 141, 0.8);
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4)
 }
 
@@ -158,11 +158,11 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Login */
 
 .login-form {
-    background-color: #22bebe;
+    background-color: #10d680;
 }
 
 .btn-secondary {
-    background-color: #0E6461;
+    background-color: #1ed89a;
     color :#FAFAFA
 }
 
@@ -188,13 +188,13 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Table Reservation */
 
 .reservation {
-    background-color: #b9d70f;
+    background-color: #d9ec09f5;
 }
 
 .guest input , 
 .name-phone input {
-    background-color: #d6230bbc;
-    border: 1px solid #b85b15;
+    background-color: #0cdad3bc;
+    border: 1px solid #cd950a;
     border-radius: 4px;
     font-size: 15px;
     text-align: center;
@@ -229,7 +229,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Manage Reservation */
 
 .manage {
-    background-color: #e8af1e;
+    background-color: #bbc811f7;
 }
 
 .manage h4 {

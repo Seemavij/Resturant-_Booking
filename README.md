@@ -1,6 +1,6 @@
 Delhi Darbar :
-* Delhi Darbar is a Asian Resturant and vegan Cafe based in Dublin that welcomes all people and serves delicious brunch items to customers. The goal is to create a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. The website includes a Menu, Reservation options and account creations for the individual user.
 
+* Delhi Darbar is a Asian Resturant and vegan Cafe based in Dublin that welcomes all people and serves delicious brunch items to customers. The goal is to create a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. The website includes a Menu, Reservation options and account creations for the individual user.
 
 * Delhi Darbar |Asian cuisine & Cafe 🌱:
 
@@ -13,7 +13,9 @@ Opening Time :
 Get in Touch!
 
 Opening Hours 
+
 ![alt image](static/images/default.png)
+
 Monday
 
 Tuesday
@@ -54,7 +56,9 @@ County Limrick
 IRELAND
 
 Contact Us
+
  +353 85 666 333
+
  + 061 234 123
 
  test@fatima.com
@@ -65,7 +69,7 @@ Contact Us
 
  User Stories :
 
- User:
+ User :
 * As a site user I can visit the restaurant's landing page so that I can find information about the restaurant.
 
 * As a site user I can view the menu so that I know what food the restaurant has to offer.
@@ -83,6 +87,7 @@ Contact Us
 * As a site user I can view photos so that I get a feel of the atmosphere and what style of food is served in the restaurant.
 
 Admin
+
 * As an admin I can manage items on the menu so that I can create, view, update and delete any items.
 
 * As an admin I can manage the reservation so that I can create, view, update and delete any reservation and avoid any double reservations.
@@ -90,6 +95,7 @@ Admin
 Design
 
 * Imagery :
+
 ![alt image](static/images/reservation.png)
 
 Imagery is used regarding restaurant environment and food content on the website. They are taken from various websites, which are credited down below in the Credits section.
@@ -100,11 +106,18 @@ Imagery is used regarding restaurant environment and food content on the website
 
 * cooler.png
 
-$ F28482 84A59D F6BD60 DC9E82 DC9E82 93C0A4
+$ F28482  84A59D  F6BD60  DC9E82  DC9E82  93C0A4 0E6164 
+
  ![alt image](static/images/cooler.png)
  
 
   Wireframes :
+
+![alt image](static/images/wireframe1.png)
+
+![alt image](static/images/wireframe2.png)
+
+![alt images](static/images/wireframe3.png)
 
 Typography :
 
@@ -196,7 +209,9 @@ It contains the navbar at the top and footer at the bottom. The user is asked to
 * A responsive footer :
 
 $ The footer contains the social media icons of Facebook, Instagram, Twitter, and Pinterest, which open all in a new tab when clicked on.
+
 $ It also contains the copyright with the current year.
+
 ![alt image](static/images/footer.png)
 
 
@@ -207,6 +222,10 @@ $ Future features that could be implemented on the website could include being a
 * Accessibility
 
 $ For better accessibility I added alt-labels to all my images for vision-impaired users. Accessibilty was also tested on lighthouse, which reached a very high score on every testing.
+
+![alt image](static/images/python.png)
+
+![alt image](static/images/views.png)
 
 * Technologies Used
 

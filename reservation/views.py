@@ -52,7 +52,7 @@ def edit_reservation(request, reservation_id):
     """
     Lets user updated their reservation
     """
-    reservation = get_object_or_404(reservation, id=reservation_id)
+    reservation = get_object_or_404(Reservation, id=reservation_id)
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST, instance=reservation)
         if reservation_form.is_valid():

@@ -106,7 +106,7 @@ Imagery is used regarding restaurant environment and food content on the website
 
 * cooler.png
 
-$ F28482  84A59D  F6BD60  DC9E82  DC9E82  93C0A4 0E6164 
+$ F28482  84A59D  F6BD60  DC9E82  DC9E82  93C0A4 0E6164  FFCFC2
 
  ![alt image](static/images/cooler.png)
  
@@ -275,7 +275,7 @@ $ Tiny JPG - Used to convert images.
 
 $ Cloud Convert - Used to convert images.
 
-$ Deployment & Local Development
+* Deployment & Local Development
 
 $ This project was created by using Gitpod. I used the pre-built template from Code Institute. The following commands were used:
 

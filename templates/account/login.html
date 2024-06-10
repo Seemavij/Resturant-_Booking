@@ -1,46 +1,43 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
 
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock head_title %}
-
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+<title>{% block title %} Delhi Darbar | Login {% endblock %}</title>
 {% block content %}
 
-<h1>{% trans "Sign In" %}</h1>
+<div class="container login-form p-3 mt-5 mb-3 rounded">
+  <div class="row justify-content-around align-items-center">
+    <div class="col-lg-4 col-md-12">
+      <h1 class="text-center">{% trans "Log In" %}</h1>
+      <hr class="border border-dark border-2">
+      <div class="card-body">
+        <p>{% blocktrans %}To book a table with us at Delhi Darbar, please log in.
+          <br>No account with us yet?
+          <a href="{{ signup_url }}"> SIGN UP</a>!{% endblocktrans %}</p>
+      </div>
+      <div class="card-body">
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
 
-{% get_providers as socialaccount_providers %}
+          <button class="btn btn-secondary btn-sm" type="submit">{% trans "Log In" %}</button>
+        </form>
+      </div>
 
-{% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
-of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
-<div class="socialaccount_ballot">
-
-  <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-  </ul>
-
-  <div class="login-or">{% trans 'or' %}</div>
-
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="card-body">
+        <img
+          src="https://res.cloudinary.com/dfcvnucfu/image/upload/v1717615045/delhi_darbar_lxf3zz.png"
+          class="img-login img-fluid rounded" alt="Outdoor table with flowers" height="500px" width="200px">
+      </div>
+    </div>
+  </div>
 </div>
-
-{% include "socialaccount/snippets/login_extra.html" %}
-
-{% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-{% endif %}
-
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
-
-{% endblock content %}
+{% endblock %}

@@ -116,7 +116,7 @@ div.col-lg-7.col-md-12.align-self-center {
 
 /* Menu */
 .menu {
-    background-color: rgba(223, 13, 128, 0.884);
+    background-color: rgba(138, 22, 78, 0);
     margin-bottom: 48px;
 }
 
@@ -136,8 +136,8 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 
 .menu-card {
-    color: #0ba35d;
-    background-color: rgba(27, 211, 141, 0.8);
+    color: #abe811d7;
+    background-color: rgba(32, 174, 169, 0.8);
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4)
 }
 
@@ -158,11 +158,11 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Login */
 
 .login-form {
-    background-color: #10d680;
+    background-color: #ffcfc2cd;
 }
 
 .btn-secondary {
-    background-color: #1ed89a;
+    background-color: #0E6461;
     color :#FAFAFA
 }
 
@@ -193,7 +193,7 @@ div.col-lg-7.col-md-12.align-self-center {
 
 .guest input , 
 .name-phone input {
-    background-color: #0cdad3bc;
+    background-color: #e84a11bc;
     border: 1px solid #cd950a;
     border-radius: 4px;
     font-size: 15px;
@@ -213,8 +213,8 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 .date input,
 .time input {
-    background-color: #ffffff71;
-    border: 1px solid #FAFAFA;
+    background-color: #cc1414ad;
+    border: 1px solid #d54413bb;
     border-radius: 4px;
     font-size: 15px;
     font-weight: 200;
@@ -242,7 +242,7 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 
 .manage .btn-success {
-    background-color: #0E6461;
+    background-color: #25b1ad;
 }
 
 .manage .btn-success:hover {

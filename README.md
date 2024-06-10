@@ -1,14 +1,14 @@
+* Delhi Darbar is a Asian Resturant and vegan Cafe based in Dublin that welcomes all people and serves delicious brunch items to customers. The goal is to create a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. The website includes a Menu, Reservation options and account creations for the individual user.
+
 ![alt image](static/images/responsive.png)
 
 Delhi Darbar :
-
-* Delhi Darbar is a Asian Resturant and vegan Cafe based in Dublin that welcomes all people and serves delicious brunch items to customers. The goal is to create a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. The website includes a Menu, Reservation options and account creations for the individual user.
 
 * Delhi Darbar |Asian cuisine & Cafe 🌱:
 
 * Delhi Darbar is a Asian Resturant and vegan cafe that goes beyond serving delicious plant-based food!
  
-* We are committed to creating a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. Our menu features a diverse range of flavorful, cruelty-free options that cater to all dietary preferences. We source locally and prioritize eco-friendly practices to minimize our environmental footprint. At Happy Leeks, we believe in the power of food to create positive change in the world. Join us as we redefine vegan cuisine and spread happiness one leek at a time!
+* We are committed to creating a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. Our menu features a diverse range of flavorful, cruelty-free options that cater to all dietary preferences. We source locally and prioritize eco-friendly practices to minimize our environmental footprint. At Delhi Darbar, we believe in the power of food to create positive change in the world. Join us as we redefine vegan cuisine and spread happiness one leek at a time!
 
 Opening Time :
 
@@ -65,6 +65,10 @@ Contact Us
 
  test@fatima.com
 
+ * Link to deployed website : Delhi Darbar
+
+ Contents :
+
  User Experience :
 
  * Delhi Darbar should invite peole to visit the Asian food and cafe. The reservation system makes it possibe for the customer to book a table in advance.
@@ -94,7 +98,17 @@ Admin
 
 * As an admin I can manage the reservation so that I can create, view, update and delete any reservation and avoid any double reservations.
 
-Design
+* Design
+
+* Colour Scheme :
+
+* This website uses a palette of lighter gray and blue tones, as well as light and dark green and light pink tones. It also uses some variants of the same colour scheme belonging to their colour family. It was created by using Coolers. 
+
+* cooler.png
+
+* F28482  84A59D  F6BD60  DC9E82  DC9E82  93C0A4 0E6164  FFCFC2
+
+ ![alt image](static/images/cooler.png)
 
 * Imagery :
 
@@ -102,17 +116,7 @@ Design
 
 Imagery is used regarding restaurant environment and food content on the website. They are taken from various websites, which are credited down below in the Credits section.
 
-* Colour Scheme :
-
-* This website uses a palette of lighter gray and blue tones, as well as light and dark green and light pink tones. It also uses some variants of the same colour scheme belonging to their colour family. It was created by using Coolors. 
-
-* cooler.png
-
-$ F28482  84A59D  F6BD60  DC9E82  DC9E82  93C0A4 0E6164  FFCFC2
-
- ![alt image](static/images/cooler.png)
  
-
   Wireframes :
 
 ![alt image](static/images/wireframe1.png)
@@ -123,11 +127,31 @@ $ F28482  84A59D  F6BD60  DC9E82  DC9E82  93C0A4 0E6164  FFCFC2
 
 Typography :
 
-$ I have imported the following Google Fonts:
+.  I have imported the following Google Fonts:
 
-$ Playfair Display 400, 500 for headings on the website.
+.  Playfair Display 400, 500 for headings on the website.
 
-$ Open Sans 300, 400, 600 for the body text on the website.
+.  Open Sans 300, 400, 600 for the body text on the website.
+
+* Features :
+
+* General features
+
+. The webpage consists of a Homepage, Menu page, Booking page, Manage Booking page, Login page, Signup page and Logout page.
+
+* All of these pages contain:
+
+. A responsive navigation bar:
+
+. The name of the restaurant is positioned on the left-hand side with the logo on the right of it. Both link to Home Page.
+
+. The other navigation links are located on the right-hand side.
+
+. The colour is a shade of light green. 
+
+![alt image](static/images/header.png)
+
+. When user is not logged in, the dropdown menu links include link to Sign Up and Login.
 
 Local Development :
 
@@ -218,6 +242,27 @@ $ It also contains the copyright with the current year.
 
 ![alt image](static/images/footer.png)
 
+SignUp  Page :
+
+. The Signup page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Signup form, to enter their username, email(optional), password and confirm password. If they have already an account, they can reach the Login page via the link just at the top of the Signup form. Only valid input is allowed and user must click Signup button to proceed with registering. Once completed the user will be redirected to the landing page and a message will pop up that user has signed up successfully. 
+
+LogIn Page :
+
+. The Login page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Login form, to enter their username and password, which they have created an account with. If they have not yet created an account the can reach the Signup page via the link just at the top of the Login form. As only valid input is allowed, a message will pop up that login was unsuccessful if user has entered incorrect details. User must click Log In button to log in. Once completed the user will be redirected to the landing page and message will pop up that user is logged in.
+
+Reservation Page :
+
+. The Reservation page can be reached via the navbar once the user has logged in. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Booking form, to select the number of guests, their name, phone number, preferred date and time. To fullfill the reservation they have to confirm by clicking the "Make reservation" button. If there was any non-valid input, a message will pop up that reservation was unsuccessful and the user will be asked to re-enter the details before they can proceed. Once reservation is complete the user will be redirected to the Manage Reservation page and a message will pop up that reservation was successful.
+
+Manage Reservation Page :
+
+. The Manage Reservation page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. It displays any existing reservation to the user, that were made by them. Information containing the reservation name, date & time of reservation and the number of the attending guests. The user has also the possibilty to update and delete their reservation.
+
+By clicking on "Edit", the user lands on edit_reservation.html where they can updated their reservation. It is the same reservation form used for booking a table, but with details already filled in, from when the reservation was made. The user is able to make any adjustments and once happy can confirm their reservation by "Update Reservation". If there was any non-valid input, a message will pop up that update was unsuccessful and the user will be asked to re-enter the details.
+
+* Logout Page :
+ 
+ . The Logout Reservation page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. The user is asked to confirm if they want to sign out. If user proceeds, they will be directed to the landing page. A message will pop up to let them know that they have logged out successfully. Logout Page
 
 * Future Considerations
 
@@ -490,7 +535,5 @@ $ I would like to express my sincere gratitude to tutor, for his invaluable guid
 $ Additionally, I would like to extend a special thanks to the Tutoring Team at Code Institute, who provided continuous assistance whenever I encountered challenges, as well as the exceptional Slack Community, whose members were always ready to lend a helping hand.
 
 $ I am truly grateful to all of you for your invaluable guidance and support throughout this project!
-
-* Acknowledgments :
 
 $ Code Institute For the Code Institute course material in html and CSS and Python for the Slack community members for their support and help. My Code Institue tutor who inspired me to push myself further.

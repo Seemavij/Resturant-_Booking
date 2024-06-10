@@ -48,7 +48,7 @@ body {
 /* About section */
 
 #about {
-    background-color: #FFCFC2;
+    background-color: #e2a128;
 }
 
 
@@ -136,7 +136,7 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 
 .menu-card {
-    color: #db1212;
+    color: #9e0dc7;
     background-color: rgba(33, 161, 157, 0.8);
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4)
 }
@@ -158,7 +158,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Login */
 
 .login-form {
-    background-color: #9d4932;
+    background-color: #22bebe;
 }
 
 .btn-secondary {
@@ -188,12 +188,12 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Table Reservation */
 
 .reservation {
-    background-color: #d7d00f;
+    background-color: #b9d70f;
 }
 
 .guest input , 
 .name-phone input {
-    background-color: #dae41bbd;
+    background-color: #d6230bbc;
     border: 1px solid #b85b15;
     border-radius: 4px;
     font-size: 15px;
@@ -202,7 +202,7 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 
 .guest input:hover {
-    background-color: rgb(202, 211, 31);
+    background-color: rgb(32, 238, 214);
     border-color: #3a3a3a;
 }
 
@@ -213,7 +213,7 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 .date input,
 .time input {
-    background-color: #1abc7b;
+    background-color: #ffffff71;
     border: 1px solid #FAFAFA;
     border-radius: 4px;
     font-size: 15px;
@@ -229,7 +229,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Manage Reservation */
 
 .manage {
-    background-color: #c0b710;
+    background-color: #e8af1e;
 }
 
 .manage h4 {
@@ -246,13 +246,13 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 
 .manage .btn-success:hover {
-    background-color: rgb(14, 100, 97, 0.7);
+    background-color: rgba(11, 145, 140, 0.7);
 }
 /* Footer */
 
 .footer {
     margin-top: auto;
-    background-color: hsl(76, 32%, 67%, 0.3);
+    background-color: hsla(77, 32%, 67%, 0.245);
 } 
 
 .social-networks {

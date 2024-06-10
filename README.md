@@ -108,7 +108,7 @@ Admin
 
 * F28482  84A59D  F6BD60  DC9E82  DC9E82  93C0A4 0E6164  FFCFC2
 
- ![alt image](static/images/cooler.png)
+ ![alt image](static/images/palete.png)
 
 * Imagery :
 
@@ -215,6 +215,14 @@ Code Used
 * Testing :
 
 ![alt image](static/images/css_validator.png)
+
+![alt image](static/images/manaultesting.png)
+
+![alt image](static/images/)
+
+* Responsiveness :
+
+. The website was tested on a Windows Laptop and while in the inspect-mode on Google Chrome also tested on different available devices. It is fully responsive.
 
 * Home Page :
 

@@ -18,19 +18,19 @@ Opening Hours
 
 ![alt image](static/images/default.png)
 
-Monday                 08:00 - 23:00
+* Monday        ------------------         08:00 - 23:00
 
-Tuesday                08:00 - 23:00
+* Tuesday      -------------------          08:00 - 23:00
 
-Wednesday              08:00 - 23:00     
+* Wednesday     ------------------         08:00 - 23:00     
 
-Thursday               08:00 - 23:00
+* Thursday      -------------------        08:00 - 23:00
 
-Friday                 08:00 - 23:00
+* Friday        -------------------         08:00 - 23:00
 
-Saturday               08:00 - 23:00
+* Saturday      --------------------        08:00 - 23:00
 
-Sunday                 08:00 - 23:00
+* Sunday        --------------------         08:00 - 23:00
 
 * On Bank Holiday we open 10:00 to 23:00
 

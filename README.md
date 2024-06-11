@@ -6,9 +6,9 @@ Delhi Darbar :
 
 * Delhi Darbar |Asian cuisine & Cafe 🌱:
 
-* Delhi Darbar is a Asian Resturant and vegan cafe that goes beyond serving delicious plant-based food!
+* Delhi Darbar is a Asian Resturant and vegan cafe that goes beyond serving delicious food!
  
-* We are committed to creating a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. Our menu features a diverse range of flavorful, cruelty-free options that cater to all dietary preferences. We source locally and prioritize eco-friendly practices to minimize our environmental footprint. At Delhi Darbar, we believe in the power of food to create positive change in the world. Join us as we redefine vegan cuisine and spread happiness one leek at a time!
+* We are committed to creating a nurturing space where people can connect, explore sustainable living, and indulge in mouthwatering dishes. Our menu features a diverse range of flavorful, cruelty-free options that cater to all dietary preferences. We source locally and prioritize eco-friendly practices to minimize our environmental footprint. At Delhi Darbar, we believe in the power of food to create positive change in the world. Join us as we redefine asian cuisine and spread happiness one leek at a time!
 
 Opening Time :
 
@@ -18,33 +18,19 @@ Opening Hours
 
 ![alt image](static/images/default.png)
 
-Monday
+Monday                 08:00 - 23:00
 
-Tuesday
+Tuesday                08:00 - 23:00
 
-Wednesday
+Wednesday              08:00 - 23:00     
 
-Thursday
+Thursday               08:00 - 23:00
 
-Friday
+Friday                 08:00 - 23:00
 
-Saturday
+Saturday               08:00 - 23:00
 
-Sunday
-
-08:00 - 23:00
-
-08:00 - 23:00
-
-08:00 - 23:00
-
-08:00 - 23:00
-
-08:00 - 23:00
-
-08:00 - 23:00
-
-08:00 - 23:00
+Sunday                 08:00 - 23:00
 
 * On Bank Holiday we open 10:00 to 23:00
 

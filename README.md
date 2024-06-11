@@ -216,6 +216,8 @@ Code Used
 
 ![alt image](static/images/css_validator.png)
 
+* Flowchart :
+
 ![alt image](static/images/manaultesting.png)
 
 ![alt image](static/images/)
@@ -223,6 +225,8 @@ Code Used
 * Automated Testing :
 
 . W3C Validator
+
+![alt image](static/images/index.html.png)
 
 . W3C was used to validate all HTML code used in this project. It was also used to validate CSS.
 
@@ -236,10 +240,12 @@ Code Used
 
  . Booking Page - No errors
 
+![alt image](static/images/menu.html.png)
  . Manage Booking Page - No errors
 
  . Update Booking Page - No errors
-
+ 
+![alt image](static/images/reservation.html.png)
  . Logout Page - No errors
 
  * PEP8 Validator :
@@ -337,6 +343,8 @@ Code Used
 
 . The Signup page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Signup form, to enter their username, email(optional), password and confirm password. If they have already an account, they can reach the Login page via the link just at the top of the Signup form. Only valid input is allowed and user must click Signup button to proceed with registering. Once completed the user will be redirected to the landing page and a message will pop up that user has signed up successfully. 
 
+![alt image](static/images/login_page.png)
+
 * LogIn Page :
 
 . The Login page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Login form, to enter their username and password, which they have created an account with. If they have not yet created an account the can reach the Signup page via the link just at the top of the Login form. As only valid input is allowed, a message will pop up that login was unsuccessful if user has entered incorrect details. User must click Log In button to log in. Once completed the user will be redirected to the landing page and message will pop up that user is logged in.
@@ -352,7 +360,9 @@ Code Used
 . By clicking on "Edit", the user lands on edit_reservation.html where they can updated their reservation. It is the same reservation form used for booking a table, but with details already filled in, from when the reservation was made. The user is able to make any adjustments and once happy can confirm their reservation by "Update Reservation". If there was any non-valid input, a message will pop up that update was unsuccessful and the user will be asked to re-enter the details.
 
 * Logout Page :
- 
+
+![alt image](static/images/signup_page.png) 
+
  . The Logout Reservation page can be reached via the dropdown menu once the user has logged in. It contains the navbar at the top and footer at the bottom. The user is asked to confirm if they want to sign out. If user proceeds, they will be directed to the landing page. A message will pop up to let them know that they have logged out successfully. Logout Page
 
 * Future Considerations

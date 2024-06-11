@@ -220,6 +220,87 @@ Code Used
 
 ![alt image](static/images/)
 
+* Automated Testing :
+
+. W3C Validator
+
+. W3C was used to validate all HTML code used in this project. It was also used to validate CSS.
+
+ . Home Page - No errors
+
+ . Menu Page - No errors
+
+ . Login Page - No errors
+
+ . Signup Page - No errors
+
+ . Booking Page - No errors
+
+ . Manage Booking Page - No errors
+
+ . Update Booking Page - No errors
+
+ . Logout Page - No errors
+
+ * PEP8 Validator :
+
+ . To verify that the Python Code is written within the correct structure, I tested it in the Code Institute's PEP8 Validator. The code was all clear, and no errors were found.
+
+ . asgi.py - No errors
+
+ . settings.py - No errors, except "line too long errors"
+
+ . urls.py - No errors
+
+. wsgi.py - No errors
+
+* restaurant app :
+
+. views.py - No errors
+
+* Menu app :
+
+. admin.py - No errors
+
+. models.py - No errors
+
+. urls.py - No errors
+
+. views.py - No errors
+
+* Reservation  app :
+
+. admin.py - No errors
+
+. forms.py - No errors, except "line too long errors"
+
+. models.py - No errors
+
+. urls.py - No errors
+
+. views.py - No errors
+
+* Lighthouse :
+
+. Lighthouse was used to test the overall performance and accessibility, which both mentioned returned a very high rating.
+
+. Home Page
+
+. Menu Page
+
+. Signup Page
+![alt image](static/images/signout_page.png)
+. Login Page
+
+. Booking Page
+
+. Manage Booking Page
+
+.Update Booking Page
+
+. Logout Page
+
+
 * Responsiveness :
 
 . The website was tested on a Windows Laptop and while in the inspect-mode on Google Chrome also tested on different available devices. It is fully responsive.
@@ -251,6 +332,8 @@ Code Used
 ![alt image](static/images/footer.png)
 
 * SignUp  Page :
+
+![alt image](static/images/signup_page.png)
 
 . The Signup page can be reached via the dropdown link from the navbar. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Signup form, to enter their username, email(optional), password and confirm password. If they have already an account, they can reach the Login page via the link just at the top of the Signup form. Only valid input is allowed and user must click Signup button to proceed with registering. Once completed the user will be redirected to the landing page and a message will pop up that user has signed up successfully. 
 

@@ -193,8 +193,8 @@ div.col-lg-7.col-md-12.align-self-center {
 
 .guest input , 
 .name-phone input {
-    background-color: #e84a11bc;
-    border: 1px solid #cd950a;
+    background-color: #bd228700;
+    border: 1px solid #14df9b91;
     border-radius: 4px;
     font-size: 15px;
     text-align: center;
@@ -213,8 +213,8 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 .date input,
 .time input {
-    background-color: #cc1414ad;
-    border: 1px solid #d54413bb;
+    background-color: #20c8a9d9;
+    border: 1px solid #6c0990bb;
     border-radius: 4px;
     font-size: 15px;
     font-weight: 200;

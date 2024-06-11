@@ -188,7 +188,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Table Reservation */
 
 .reservation {
-    background-color: #12ae72b7;
+    background-color: #c1c61bf8;
 }
 
 .guest input , 
@@ -213,8 +213,8 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 .date input,
 .time input {
-    background-color: #1f97acf4;
-    border: 1px solid #b35a0bfa;
+    background-color: #28c7adf4;
+    border: 1px solid #b3130bfa;
     border-radius: 4px;
     font-size: 15px;
     font-weight: 200;
@@ -229,7 +229,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Manage Reservation */
 
 .manage {
-    background-color: #b9c908f7;
+    background-color: #e1f31ff7;
 }
 
 .manage h4 {

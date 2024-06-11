@@ -220,7 +220,6 @@ Code Used
 
 ![alt image](static/images/manaultesting.png)
 
-![alt image](static/images/)
 
 * Automated Testing :
 
@@ -246,6 +245,7 @@ Code Used
  . Update Booking Page - No errors
  
 ![alt image](static/images/reservation.html.png)
+
  . Logout Page - No errors
 
  * PEP8 Validator :
@@ -424,6 +424,8 @@ Code Used
 . Tiny JPG - Used to convert images.
 
 . Cloud Convert - Used to convert images.
+
+![alt image](static/images/(signout_sucessfully.png))
 
 * Deployment & Local Development
 
@@ -639,3 +641,5 @@ The Menu content was created from delhi darbar website and my own creations.
 . I am truly grateful to all of you for your invaluable guidance and support throughout this project!
 
 . Code Institute For the Code Institute course material in html and CSS and Python for the Slack community members for their support and help. My Code Institue tutor who inspired me to push myself further.
+
+![alt image](static/images/delhidarbar_note.png)

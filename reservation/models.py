@@ -21,7 +21,6 @@ TIME_CHOICES = (
     ('22:00 PM', '22:00 PM'),
     ('23:00 PM', '23:00 PM'),
 ) 
-
 class Reservation(models.Model):
 
     """

@@ -188,13 +188,13 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Table Reservation */
 
 .reservation {
-    background-color: #d9ec09f5;
+    background-color: #12ae72b7;
 }
 
 .guest input , 
 .name-phone input {
-    background-color: #bd228700;
-    border: 1px solid #14df9b91;
+    background-color: #11bea1c3;
+    border: 1px solid #850f1391;
     border-radius: 4px;
     font-size: 15px;
     text-align: center;
@@ -213,8 +213,8 @@ div.col-lg-7.col-md-12.align-self-center {
 }
 .date input,
 .time input {
-    background-color: #20c8a9d9;
-    border: 1px solid #bc0da4bb;
+    background-color: #1f97acf4;
+    border: 1px solid #b35a0bfa;
     border-radius: 4px;
     font-size: 15px;
     font-weight: 200;
@@ -229,7 +229,7 @@ div.col-lg-7.col-md-12.align-self-center {
 /* Manage Reservation */
 
 .manage {
-    background-color: #bbc811f7;
+    background-color: #b9c908f7;
 }
 
 .manage h4 {

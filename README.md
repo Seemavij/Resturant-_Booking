@@ -204,14 +204,26 @@ Code Used
 
 * Flowchart :
 
-![alt image](static/images/manaultesting.png)
+![alt image](static/images/manaul_testing.png)
+
+* Manaul Testing :
+
+. Confirm all files tested no errors 
+
+. Confirm index.html  working
+
+. Confirm Menu.html working
+
+. Confirm Manage Reservation working
+
+. Confirm Edit Reservation working
 
 
 * Automated Testing :
 
 . W3C Validator
 
-![alt image](static/images/index.html.png)
+![alt image](static/images/index_html.png)
 
 . W3C was used to validate all HTML code used in this project. It was also used to validate CSS.
 
@@ -226,11 +238,12 @@ Code Used
  . Booking Page - No errors
 
 ![alt image](static/images/menu.html.png)
+
  . Manage Booking Page - No errors
 
  . Update Booking Page - No errors
  
-![alt image](static/images/reservation.html.png)
+![alt image](static/images/reservation_html.png)
 
  . Logout Page - No errors
 
@@ -281,7 +294,9 @@ Code Used
 . Menu Page
 
 . Signup Page
+
 ![alt image](static/images/signout_page.png)
+
 . Login Page
 
 . Booking Page
@@ -338,6 +353,8 @@ Code Used
 * Reservation Page :
 
 . The Reservation page can be reached via the navbar once the user has logged in. It contains the navbar at the top and footer at the bottom. The user will be prompted with a Booking form, to select the number of guests, their name, phone number, preferred date and time. To fullfill the reservation they have to confirm by clicking the "Make reservation" button. If there was any non-valid input, a message will pop up that reservation was unsuccessful and the user will be asked to re-enter the details before they can proceed. Once reservation is complete the user will be redirected to the Manage Reservation page and a message will pop up that reservation was successful.
+
+![alt image](static/images/manage_reservation.png)
 
 * Manage Reservation Page :
 
@@ -427,7 +444,10 @@ Code Used
 
 * Deployment
 
+![alt image](static/images/reservation_name.png)
+
 In the Terminal:
+
 . Install Django and gunicorn.(pip3 install 'django<4' gunicorn)
 
 . Install supporting libraries.(pip3 install dj_database_url==0.5.0 psycopg2)

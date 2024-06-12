@@ -1,6 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 TIME_CHOICES = (
@@ -24,7 +22,7 @@ TIME_CHOICES = (
 class Reservation(models.Model):
 
     """
-    Creates model for table Booking
+    Creates model for table Reservation
     """
 
     name = models.CharField(max_length=30)

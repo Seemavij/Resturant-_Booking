@@ -26,6 +26,7 @@ urlpatterns = [
     path('table_reservation/', include('reservation.urls', namespace='table_reservation')),
     path('menu_list/', include('menu.urls', namespace='menu_list')),
     path('manage_reservation/', include('reservation.urls', namespace='manage_reservation'))
+ 
 
  ]
 admin.site.site_header = 'Delhi Darbar AdminPanel'

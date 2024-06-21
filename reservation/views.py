@@ -75,5 +75,3 @@ def delete_reservation(request, reservation_id):
     reservation.delete()
     messages.success(request, 'Reservation deleted successfully.')
     return redirect('reservation:manage_reservation')
-
-

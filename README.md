@@ -430,7 +430,7 @@ Code Used
 
 . Cloud Convert - Used to convert images.
 
-![alt image](static/images/(signout_sucessfully.png))
+![alt image](static/images/signout_sucessfully.png)
 
 * Deployment & Local Development
 

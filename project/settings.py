@@ -39,7 +39,8 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 ALLOWED_HOSTS = [
     '8000-seemavij-resturantbooki-4h1piy1bfet.ws-eu114.gitpod.io',
     '.herokuapp.com',
-    '8000-seemavij-resturantbooki-q4n4z60ya49.ws-eu114.gitpod.io'
+    '8000-seemavij-resturantbooki-q4n4z60ya49.ws-eu114.gitpod.io',
+    '8000-seemavij-resturantbooki-los6fejgwz6.ws-eu114.gitpod.io'
 ]
 
 

@@ -362,6 +362,8 @@ Code Used
 
 . By clicking on "Edit", the user lands on edit_reservation.html where they can updated their reservation. It is the same reservation form used for booking a table, but with details already filled in, from when the reservation was made. The user is able to make any adjustments and once happy can confirm their reservation by "Update Reservation". If there was any non-valid input, a message will pop up that update was unsuccessful and the user will be asked to re-enter the details.
 
+![alt image](static/images/lighthouse_testing.png)
+
 * Logout Page :
 
 ![alt image](static/images/signup_page.png) 

@@ -157,6 +157,7 @@ Local Development :
 
 7 Click "Create Fork".
 
+![alt image](static/images/manaul_testing1.png)
 
 How to Clone
 

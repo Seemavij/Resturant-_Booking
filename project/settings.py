@@ -32,15 +32,17 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-^5q3wu=#mjr3c!gy^6b)_=35evl0-#=iw*!*-l!c8u&kf5k8xb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
-    '8000-seemavij-resturantbooki-4h1piy1bfet.ws-eu114.gitpod.io',
+    '8000-seemavij-resturantbooki-z656tft4ilr.ws-eu116.gitpod.io',
     '.herokuapp.com',
-    '8000-seemavij-resturantbooki-q4n4z60ya49.ws-eu114.gitpod.io',
-    '8000-seemavij-resturantbooki-los6fejgwz6.ws-eu114.gitpod.io'
+
+ '8000-seemavij-resturantbooki-q4n4z60ya49.ws-eu114.gitpod.io',
+ '8000-seemavij-resturantbooki-los6fejgwz6.ws-eu114.gitpod.io'
+
 ]
 
 

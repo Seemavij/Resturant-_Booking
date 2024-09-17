@@ -52,10 +52,14 @@ def edit_reservation(request, reservation_id):
     """
     Lets user updated their reservation
     """
+    print(reservation_id)
     reservation = get_object_or_404(Reservation, id=reservation_id)
+  
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST, instance=reservation)
+       
         if reservation_form.is_valid():
+            reservation_form.instance.name = request.user.username
             reservation_form.save()
             messages.success(request, 'reservation updated successfully.')
             return redirect('reservation:manage_reservation')

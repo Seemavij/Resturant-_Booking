@@ -139,6 +139,8 @@ Typography :
 
 . When user is not logged in, the dropdown menu links include link to Sign Up and Login.
 
+![alt image](static/images/bookinghome_page.png)
+
 Local Development :
 
 * How to Fork
@@ -238,7 +240,7 @@ Code Used
 
  . Booking Page - No errors
 
-![alt image](static/images/menu.html.png)
+![alt image](static/images/bookingmenu_page.png)
 
  . Manage Booking Page - No errors
 
@@ -247,6 +249,8 @@ Code Used
 ![alt image](static/images/reservation_html.png)
 
  . Logout Page - No errors
+
+![alt image](static/images/booking_manage_reservation.png)
 
  * PEP8 Validator :
 

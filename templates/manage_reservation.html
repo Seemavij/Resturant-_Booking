@@ -17,13 +17,13 @@
           </div>
           <a href="{% url 'reservation:edit_reservation' reservation.id %}" class="btn btn-success">Edit</a>
           <a href="{% url 'reservation:delete_reservation' reservation.id %}" class="btn btn-danger"
-            data-bs-toggle="modal" data-bs-target="#deleteMessage">Delete</a>
-          <div class="modal fade" id="deleteMessage" tabindex="-1" aria-labelledby="deleteMessageLabel"
+            data-bs-toggle="modal" data-bs-target="#deleteMessage{{ reservation.id }}">Delete</a>
+          <div class="modal fade" id="deleteMessage{{ reservation.id }}" tabindex="-1" aria-labelledby="deleteMessageLabel{{ reservation.id }}"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="deleteMessageLabel">Confirm Delete Request</h5>
+                  <h5 class="modal-title" id="deleteMessageLabel{{ reservation.id }}">Confirm Delete Request</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

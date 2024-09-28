@@ -201,6 +201,12 @@ Code Used
 
 . Kera Cudmore's sample readme - used when creating README.md and TESTING.md
 
+![alt image](static/images/reservation_forms_py.png)
+
+![alt image](static/images/reservation_models_py.png)
+
+![alt image](static/images/resturant_views_py.png)
+
 * Testing :
 
 ![alt image](static/images/css_validator.png)

@@ -4,6 +4,7 @@ from django.contrib import messages
 from .forms import ReservationForm
 from .models import Reservation
 
+
 def table_reservation(request):
     """
     Lets user create a reservation
@@ -18,7 +19,7 @@ def table_reservation(request):
             messages.success(request, 'Reservation successful.')
             return redirect(reverse('reservation:manage_reservation'))
         else:
-            messages.error(request, 'Reservation unsuccessful. Please try again.')
+            messages.error(request, 'Reservation unsuccessful.Please try again.')
     else:
         reservation_form = ReservationForm()
 
@@ -54,10 +55,10 @@ def edit_reservation(request, reservation_id):
     """
     print(reservation_id)
     reservation = get_object_or_404(Reservation, id=reservation_id)
-  
+
     if request.method == 'POST':
         reservation_form = ReservationForm(request.POST, instance=reservation)
-       
+
         if reservation_form.is_valid():
             reservation_form.instance.name = request.user.username
             reservation_form.save()

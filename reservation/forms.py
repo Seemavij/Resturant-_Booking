@@ -16,7 +16,7 @@ class ReservationForm(forms.ModelForm):
 
                                           ))
     date = forms.DateField(input_formats=['%Y-%m-%d'],
-                           widget=forms.DateInput(attrs={ 
+                           widget=forms.DateInput(attrs={
                                'type': 'date'
                            }))
 
